@@ -1,0 +1,19 @@
+
+clearvars;
+
+dataset = {'FullFC/ESO190','MaskedFC/ESO190','FullEC/ESO190','MaskedEC/ESO190',...
+    'FullFC/EEG_1sz','MaskedFC/EEG_1sz','FullEC/EEG_1sz',...    
+    'FullFC/EEG_equal','MaskedFC/EEG_equal','FullEC/EEG_equal','MaskedEC/EEG_equal',...
+    'FullFC/EEG_chb06','MaskedFC/EEG_chb06','FullEC/EEG_chb06','MaskedEC/EEG_chb06',...
+    'FullFC/EEG_chb15','MaskedFC/EEG_chb15','FullEC/EEG_chb15','MaskedEC/EEG_chb15',...    
+    'FullFC/EEG_chb24','MaskedFC/EEG_chb24','FullEC/EEG_chb24','MaskedEC/EEG_chb24'...        
+    };
+save('Service/GlobalStructure/0.Info/Settings/dataset_full.mat','dataset');
+
+
+featureSet = {'AUC','IPF','PE','CC','kernel'};
+save('Service/GlobalStructure/0.Info/Settings/feature_dim0_full.mat','featureSet');
+
+featureSet = {'PI','PE','PL','CC','kernel'};
+save('Service/GlobalStructure/0.Info/Settings/feature_dim1_full.mat','featureSet');
+
